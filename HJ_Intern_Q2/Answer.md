@@ -17,14 +17,14 @@
 #####第二小问
 ```JavaScript
 (function () {
-        var imgs = document.getElementsByTagName('IMG');
-            var icon = document.querySelector('.logo img');
-            icon.addEventListener('click', function (event) {
-                var aniConfig = "transform: rotate(-180deg); transition: transform 2s ease";
-                for (var i = 0,l = imgs.length; i < l; i++) {
-                    imgs[i].style.cssText += aniConfig;
-                }
-                event.preventDefault();
-            }); 
-        })();
+    var imgs = document.getElementsByTagName('IMG');
+        var icon = document.querySelector('.logo img');
+        icon.addEventListener('click', function (event) {
+            var aniConfig = "transform: rotate(-180deg); transition: transform 2s ease";
+            for (var i = 0,l = imgs.length; i < l; i++) {
+                imgs[i].style.cssText += aniConfig;
+            }
+        event.preventDefault();
+    }); 
+})();
 ```
